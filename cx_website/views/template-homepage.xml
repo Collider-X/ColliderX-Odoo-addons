@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+		The ColliderX website module (cx_website) is an Odoo module that packs the ColliderX web assets on top of the base Odoo 11 community version.
+		Copyright (C) 2017 Marc Lijour
+		https://www.linkedin.com/in/marclijour
+		https://github.com/Collider-X/ColliderX-Odoo-addons/cx_website
+
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU Affero General Public License as
+		published by the Free Software Foundation, either version 3 of the
+		License, or (at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU Affero General Public License for more details.
+
+		You should have received a copy of the GNU Affero General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<odoo>
+    <template id="cx_website.homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@id='wrap']" position="inside">
+          <section class="s_text_block_image_fw oe_img_bg" style="background-position: 50% 100%; background-image: url(&quot;/web/image/website.s_background_image_05&quot;);">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mt64 mb64 bg-black-25">
+                  <h2 style="font-size:62px">ColliderX</h2>
+                  <h4>The World's First [Blockchain, AI ++] R&amp;amp;D Hub</h4>
+                  <p>We're accelerating the development of Open Source Blockchain Technologies by connecting infrastructure needs with talents and funding.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+              <section class="s_image_text" style="">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 mt32 mb32">
+                      <img class="img img-responsive center-block mb16" src="/cx_website/static/description/icon.png" alt="Odoo image and text block" data-original-title="" title=""/>
+                    </div>
+                    <div class="col-md-6 mt64 mb32">
+                      <h3>About ColliderX</h3>
+                      <p id="yui_3_17_2_1_1512352115284_270" style="word-wrap: break-word; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">ColliderX is the world’s first open-source,&amp;nbsp;crowdsourced, and crowdfunded blockchain research and development hub. This is a unique model for unbiased, ground-breaking R&amp;amp;D that bridges the gap between industry problems and pure academic or corporate research.</p>
+                      <p style="word-wrap: break-word; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">Although we are passionate about the power of blockchain technology, we don’t want to be restricted to just that; we explore blockchain at the convergence of other technologies. To us, "[Blockchain++]" means blockchain at the intersection of machine learning and A.I, with augmented reality, and Internet of Things as other areas of interest.</p>
+                      <p id="yui_3_17_2_1_1512352115284_274" style="word-wrap: break-word; margin-bottom: 0px; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">The ColliderX name was inspired by the world's most powerful particle accelerator, a facility to allow physicists to test the predictions of different theories, by accelerating particles to a point where the kinetic energy created can impact other particles. Similarly, we are putting incredibly smart people together in a room (virtual and physical) to see how we can harness the power of experimental research and tinkering.&amp;nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="jumbotron s_button bg-gray-lighter">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <p class="mb0">
+                        <strong>Read our latest updates on Medium</strong>
+                      </p>
+                      <p class="mb0"> Stay up to date with our community</p>
+                    </div>
+                    <div class="col-md-3">
+                      <a href="https://medium.com/colliderx" class="pull-right mt8 btn btn-primary btn-lg" target="_blank" data-original-title="" title="">Read it here</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </xpath>
+    </template>
+</odoo>
+
