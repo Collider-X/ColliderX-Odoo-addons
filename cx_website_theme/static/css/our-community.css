@@ -1,0 +1,363 @@
+/*desktop*/
+
+@media (min-width: 940px) {
+
+.header-bridges {
+	background-image: url('../images/bridges.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.team h2 {
+	padding: 60px 0;
+	font-size: 25px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+}
+
+.team h8 {
+	font-size: 20px;
+	color: gray;
+	font-family: 'Titillium Web', sans-serif;
+	display: block;
+	text-align: center;
+	padding: 10px 0;
+}
+
+.team h7, .partner h7 {
+	padding: 10px 0;
+	font-size: 20px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.team a {
+	padding: 10px 0;
+	font-size: 20px;
+	color: #FF3838;
+	font-family: 'Titillium Web', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.container1 {
+	float: left;
+	width: 23%;
+	height: 580px;
+	margin-right: 15px;
+}
+
+.container1 img {
+	width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 25px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.container1 img:hover, .partner img:hover {
+	filter: none;
+  	-webkit-filter: grayscale(0%);
+  }
+
+.connect {
+	line-height: 50px;
+	text-align: center;
+}
+
+.special-thanks {
+	float: left;
+	text-align: center;
+	margin: 50px;
+}
+
+.special-thanks a {
+	display: inline-block;
+}
+
+.acm img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 30px 0;
+	width: 200px;
+	height: auto;
+}
+
+.schools img {
+	padding: 50px 20px;
+    margin-left: auto;
+    margin-right: auto;
+	float: left;
+	width: 330px;
+	height: auto;
+}
+
+.partner {
+	float: left;
+	width: 23%;
+	height: 400px;
+	margin-right: 15px;
+}
+
+.partner img {
+	width: 100%;
+    height: 250px;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.partner p {
+	font-size: 15px;	
+	font-family: 'Titillium Web', sans-serif;
+	color: gray;
+	display: block;
+	text-align: center;
+}
+
+}
+
+
+/*tablet*/
+
+@media (min-width: 768px) and (max-width: 940px) {
+
+.team h2 {
+	padding: 60px 0;
+	font-size: 25px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.team h8 {
+	font-size: 20px;
+	color: gray;
+	font-family: 'Titillium Web', sans-serif;
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.team h7, .partner h7 {
+	padding: 5px 0;
+	font-size: 20px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.team a {
+	padding: 5px 0;
+	font-size: 20px;
+	color: #FF3838;
+	font-family: 'Titillium Web', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.container1 {
+	float: left;
+	width: 47%;
+	height: 580px;
+	margin-right: 15px;
+}
+
+.container1 img {
+	width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 25px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.container1 img:hover, .partner img:hover {
+	filter: none;
+  	-webkit-filter: grayscale(0%);
+  }
+
+.connect {
+	line-height: 50px;
+	text-align: center;
+}
+
+.special-thanks {
+	float: center;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.special-thanks a {
+	display: inline-block;
+}
+
+.acm img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 30px 0;
+	width: 200px;
+	height: auto;
+}
+
+
+.schools img {
+	padding: 50px 20px 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+	float: center;
+	width: 330px;
+	display: block;
+	height: auto;
+}
+
+.partner {
+	float: left;
+	width: 47%;
+	height: 380px;
+	padding-top: 50px;
+	margin-right: 15px;
+}
+
+.partner img {
+	width: 100%;
+    height: 250px;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.partner p {
+	font-size: 15px;	
+	font-family: 'Titillium Web', sans-serif;
+	color: gray;
+	display: block;
+	text-align: center;
+}
+
+}
+
+/*mobile*/
+
+@media (min-width: 400px) and (max-width: 768px) { 
+
+.team h2 {
+	padding: 60px 0;
+	font-size: 25px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.team h8 {
+	font-size: 20px;
+	color: gray;
+	font-family: 'Titillium Web', sans-serif;
+	display: block;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.team h7, .partner h7 {
+	padding: 5px 0;
+	font-size: 20px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.team a {
+	padding: 5px 0;
+	font-size: 20px;
+	color: #FF3838;
+	font-family: 'Titillium Web', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.container1 {
+	width: 100%;
+	height: 580px;
+	margin-right: 15px;
+}
+
+.container1 img {
+	width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 25px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.container1 img:hover, .partner img:hover {
+	filter: none;
+  	-webkit-filter: grayscale(0%);
+  }
+
+.connect {
+	line-height: 50px;
+	text-align: center;
+}
+
+.special-thanks {
+	float: center;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.special-thanks a {
+	display: inline-block;
+}
+
+.acm img {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 30px 0;
+	width: 200px;
+	height: auto;
+}
+
+
+.schools img {
+	padding: 50px 20px 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+	float: center;
+	width: 330px;
+	display: block;
+	height: auto;
+}
+
+.partner {
+	width: 100%;
+	height: 380px;
+	padding-top: 50px;
+	margin-right: 15px;
+}
+
+.partner img {
+	width: 100%;
+    height: 250px;
+    object-fit: cover;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.partner p {
+	font-size: 15px;	
+	font-family: 'Titillium Web', sans-serif;
+	color: gray;
+	display: block;
+	text-align: center;
+}
+
+}

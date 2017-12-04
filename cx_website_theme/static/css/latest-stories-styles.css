@@ -1,0 +1,427 @@
+/*desktop*/
+
+@media (min-width: 940px) {
+
+.container1, .container2 {
+	float: left;
+	width: 32.5%;
+	height: 500px;
+	margin-right: 20px;
+}
+
+.container3 {
+	float: left;
+	width: 31%;
+	height: 400px;
+}
+
+.month img {
+	width: 100%;
+    height: 260px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.month h2 {
+	padding: 50px 0;
+	font-size: 25px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.month h7 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: gray;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.month p {
+	padding: 15px 0 0 0;
+	font-size: 15px;
+	color: black;	
+	font-family: 'Titillium Web', sans-serif;
+	line-height: 20px;
+}
+
+.month a {
+	line-height: 45px;
+	font-size: 15px;
+	color: #FF3838;
+	text-transform: uppercase;	
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.month a:hover {
+	text-decoration: underline;
+}
+
+.container4 {
+	float: left;
+	width: 20%;
+	height: 300px;
+	margin: 0 35px;
+}
+
+.container4 img {
+	width: 100%;
+    height: 240px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container5 {
+	float: left;
+	width: 70%;
+}
+
+.container5 iframe {
+	width: 100%;
+	height: 210px;
+}
+
+span {
+	color: #FF3838;
+}
+
+.container6 {
+	float: left;
+	width: 49%;
+	height: 1050px;
+	margin-right: 20px;
+}
+
+.twitter-tweet {
+	padding-bottom: 30px;
+}
+
+.container6 img, .container7 img {
+	width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container7 {
+	float: left;
+	width: 49%;
+	height: 1050px;
+}
+
+.container8 {
+	float: left;
+	width: 49%;
+	height: 500px;
+	margin-right: 20px;
+}
+
+.container8 img, .container9 img {
+	width: 100%;
+    height: 300px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container9 {
+	float: left;
+	width: 49%;
+	height: 500px;
+}
+
+.container10 {
+	width: 70%;
+	height: 500px;
+}
+
+.container10 img {
+	width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+}
+
+/*tablet*/
+
+@media (min-width: 768px) and (max-width: 940px) {
+
+.container1, .container2 {
+	float: left;
+	width: 32.5%;
+	height: 410px;
+	margin-right: 8px;
+}
+
+.container3 {
+	float: left;
+	width: 31%;
+	height: 410px;
+}
+
+.month img {
+	width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.month h2 {
+	padding: 50px 0;
+	font-size: 25px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.month h7 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: gray;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.month p {
+	padding: 15px 0 0 0;
+	font-size: 15px;
+	color: black;	
+	font-family: 'Titillium Web', sans-serif;
+	line-height: 20px;
+}
+
+.month a {
+	line-height: 45px;
+	font-size: 14px;
+	color: #FF3838;
+	text-transform: uppercase;	
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.month a:hover {
+	text-decoration: underline;
+}
+
+.container4 {
+	float: left;
+	width: 20%;
+	height: 250px;
+	margin: 0 35px 0 20px;
+}
+
+.container4 img {
+	width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container5 {
+	float: left;
+	width: 70%;
+}
+
+.container5 iframe {
+	width: 100%;
+	height: 170px;
+}
+
+span {
+	color: #FF3838;
+}
+
+.container6 {
+	float: left;
+	width: 49%;
+	height: 850px;
+	margin-right: 10px;
+}
+
+.twitter-tweet {
+	padding-bottom: 50px;
+}
+
+.container6 img, .container7 img {
+	width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container7 {
+	float: left;
+	width: 49%;
+	height: 850px;
+}
+
+.container8 {
+	float: left;
+	width: 49%;
+	height: 370px;
+	margin-right: 10px;
+}
+
+.container8 img, .container9 img {
+	width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container9 {
+	float: left;
+	width: 49%;
+	height: 370px;
+}
+
+.container10 {
+	width: 70%;
+	height: 500px;
+}
+
+.container10 img {
+	width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+}
+
+/*mobile*/
+
+@media (min-width: 400px) and (max-width: 768px) {
+
+.container1, .container2, .container3 {
+	margin: 0 auto;
+	float: left;
+	width: 100%;
+	height: 450px;
+}
+
+.month img {
+	width: 100%;
+    height: 260px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.month h2 {
+	padding: 50px 0;
+	font-size: 25px;
+	font-weight: bold;	
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.month h7 {
+	text-transform: uppercase;
+	font-size: 20px;
+	color: gray;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.month p {
+	padding: 15px 0 0 0;
+	font-size: 15px;
+	color: black;	
+	font-family: 'Titillium Web', sans-serif;
+	line-height: 20px;
+}
+
+.month a {
+	margin: 0 auto;
+	text-align: center;
+	line-height: 45px;
+	font-size: 15px;
+	color: #FF3838;
+	text-transform: uppercase;	
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.month a:hover {
+	text-decoration: underline;
+}
+
+.container4 {
+	float: left;
+	width: 100%;
+	height: 250px;
+}
+
+.container4 img {
+	width: 100%;
+    height: 240px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container5 {
+	float: left;
+	width: 100%;
+}
+
+.container5 iframe {
+	width: 100%;
+	height: 200px;
+	padding-bottom: 50px;
+}
+
+span {
+	color: #FF3838;
+}
+
+.container6 {
+	float: left;
+	width: 100%;
+	height: 850px;
+}
+
+.twitter-tweet {
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.container6 img, .container7 img {
+	width: 100%;
+    height: 260px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container7 {
+	float: left;
+	width: 100%;
+	height: 900px;
+}
+
+.container8 {
+	float: left;
+	width: 100%;
+	height: 410px;
+}
+
+.container8 img, .container9 img {
+	width: 100%;
+    height: 260px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}
+
+.container9 {
+	float: left;
+	width: 100%;
+	height: 410px;
+}
+
+.container10 {
+	width: 100%;
+	height: 500px;
+}
+
+.container10 img {
+	width: 100%;
+    height: 400px;
+    object-fit: cover;
+    padding-bottom: 30px;
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+		The ColliderX website theme module (cx_website_theme) packs the ColliderX website theme on top of the base Odoo 11 community version.
+		Copyright (C) 2017 Marc Lijour
+		https://www.linkedin.com/in/marclijour
+		https://github.com/Collider-X/ColliderX-Odoo-addons/cx_website_theme
+
+		This program is free software: you can redistribute it and/or modify
+		it under the terms of the GNU Affero General Public License as
+		published by the Free Software Foundation, either version 3 of the
+		License, or (at your option) any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU Affero General Public License for more details.
+
+		You should have received a copy of the GNU Affero General Public License
+		along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<odoo>
+    <template id="cx_website_theme.css" inherit_id="website.assets_frontend">
+        <xpath expr="link[last()]" position="after">
+            <link href="/cx_website_theme/static/css/advisor-page-styles.css" rel="stylesheet" type="text/css"/>
+            <link href="/cx_website_theme/static/css/forms-styles.css" rel="stylesheet" type="text/css"/>
+            <link href="/cx_website_theme/static/css/homepage-styles.css" rel="stylesheet" type="text/css"/>
+            <link href="/cx_website_theme/static/css/latest-stories-styles.css" rel="stylesheet" type="text/css"/>
+            <link href="/cx_website_theme/static/css/main-styles.css" rel="stylesheet" type="text/css"/>
+            <link href="/cx_website_theme/static/css/our-community.css" rel="stylesheet" type="text/css"/>
+            <link href="/cx_website_theme/static/css/reset.css" rel="stylesheet" type="text/css"/>
+            <link href="/cx_website_theme/static/css/tinkerer-styles.css" rel="stylesheet" type="text/css"/>
+        </xpath>
+    </template>
+</odoo>
+
