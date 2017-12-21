@@ -3,7 +3,7 @@ This repository contains Odoo modules that builds the infrastructure of Collider
 
 ColliderX currently runs on Odoo 11, so makes sure you're checking out the right branch (11.0).
 
-## cx_operations
+## `cx_operations`
 A module containing the configuration of Odoo for ColliderX, including company data, applications, and features.
 
 ## cx_website_theme
