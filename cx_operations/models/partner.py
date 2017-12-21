@@ -17,5 +17,26 @@
 #   You should have received a copy of the GNU Affero General Public License
 #	along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from . import controllers
-from . import models
+
+from odoo import models, fields, api
+
+import os
+
+import logging
+_logger = logging.getLogger(__name__)
+
+# To add first name and last name to the person record
+# note. res.users (reserved for technical data) inherits from res.partner
+class ResPartner(models.Model):
+    _inherit = 'res.partner'
+
+    x_firstname = fields.Char(
+        string="First Name",             # Optional label of the field
+        help='A person\' first name',    # Help tooltip text
+    )
+
+    x_lastname = fields.Char(
+        string="Last Name",             # Optional label of the field
+        help='A person\' last name',    # Help tooltip text
+    )
+

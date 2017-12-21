@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cx_operations,cx_operations.cx_operations,model_cx_operations_cx_operations,,1,0,0,0
