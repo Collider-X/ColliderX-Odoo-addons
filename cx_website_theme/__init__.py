@@ -2,7 +2,7 @@
 #	The ColliderX website theme module (cx_website_theme) packs the ColliderX website theme on top of the base Odoo 11 community version.
 #	Copyright (C) 2017 Marc Lijour
 #   https://www.linkedin.com/in/marclijour
-#   https://github.com/Collider-X/ColliderX-Odoo-addons/cx_website
+#   https://github.com/Collider-X/ColliderX-Odoo-addons/tree/11.0/cx_website_theme
 #
 #	This program is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU Affero General Public License as
