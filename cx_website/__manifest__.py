@@ -20,11 +20,12 @@
     'name': "ColliderX Website",
 
     'summary': """
-        This module packs the ColliderX web assets on top of the base Odoo 11 community version. 
-        It supports the ColliderX application (cx_app) with the website content.""",
+        This module packs the ColliderX web assets on top of the base Odoo 11 community version.
+        It's an optional add-on to the ColliderX application (cx_operations).""",
 
     'description': """
         The ColliderX Website includes static pages, menu configuration items, and styling.
+        Note: the theme assets are called from the companion module (cx_website_theme).
     """,
 
     'author': "Marc Lijour",
@@ -45,7 +46,7 @@
 
     # always loaded
     'data': [
-        'views/template-homepage.xml',
+        'pages/homepage.xml',
     ],
 
     "auto_install": False,
