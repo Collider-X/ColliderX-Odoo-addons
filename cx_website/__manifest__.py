@@ -39,14 +39,16 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 
-				'website', 
+    'depends': ['base',
+				'website',
+                'cx_website_theme', # ColliderX theme in a companion module
 				'theme_default',	# we need the plain bootstrap theme
 				],
 
     # always loaded
     'data': [
         'pages/homepage.xml',
+        'pages/footer.xml',
     ],
 
     "auto_install": False,

@@ -23,54 +23,134 @@
 				 see qsm-odoo's comment @ https://github.com/odoo/odoo/issues/21243
 		-->
 		<template id="website.homepage" name="Homepage">
-    <t name="Homepage" priority="29" t-name="website.homepage">
-      <t t-call="website.layout">
-        <t t-set="pageName" t-value="'homepage'" />
-        <div id="wrap" class="oe_structure oe_empty">
-          <section class="s_text_block_image_fw oe_img_bg" style="background-position: 50% 100%; background-image: url(&quot;/web/image/website.s_background_image_05&quot;);">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 mt64 mb64 bg-black-25">
-                  <h2 style="font-size:62px">ColliderX</h2>
-                  <h4>The World's First [Blockchain, AI ++] R&amp;amp;D Hub</h4>
-                  <p>We're accelerating the development of Open Source Blockchain Technologies by connecting infrastructure needs with talents and funding.</p>
-                </div>
+          <t name="Homepage" priority="29" t-name="website.homepage">
+            <t t-call="website.layout">
+              <t t-set="pageName" t-value="'homepage'"/>
+              <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_text_block_image_fw oe_img_bg" style="background-position: 50% 100%; background-image: url(&quot;/web/image/website.s_background_image_05&quot;);">
+                  <div class="container">
+                    <div class="row">
+                      <div class="mt64 mb64 bg-black-25 col-md-8 col-md-offset-2">
+                        <h1 align="center">
+                          <font style="font-size: 62px;">The World's First</font>
+                        </h1>
+                        <h1 align="center">
+                          <font style="font-size: 62px;">[Blockchain, AI ++]</font>
+                        </h1>
+                        <h1 align="center">
+                          <font style="font-size: 62px;">R&amp;amp;D Hub</font>
+                        </h1>
+                        <p>
+                          <br/>
+                        </p>
+                        <p>We're accelerating the development of Open Source Blockchain Technologies by connecting infrastructure needs with talents and funding.</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_image_text" style="">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-5 mb92 mt48">
+                        <img class="img img-responsive center-block mb16" src="/cx_website/static/description/icon.png" alt="Odoo image and text block" data-original-title="" title=""/>
+                      </div>
+                      <div class="col-md-5 mb92 mt48">
+                        <h2>About ColliderX</h2>
+                        <p id="yui_3_17_2_1_1512352115284_270" style="word-wrap: break-word; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">ColliderX is the world’s first open-source,&amp;nbsp;crowdsourced, and crowdfunded blockchain research and development hub. This is a unique model for unbiased, ground-breaking R&amp;amp;D that bridges the gap between industry problems and pure academic or corporate research.</p>
+                        <p style="word-wrap: break-word; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">Although we are passionate about the power of blockchain technology, we don’t want to be restricted to just that; we explore blockchain at the convergence of other technologies. To us, "[Blockchain++]" means blockchain at the intersection of machine learning and A.I, with augmented reality, and Internet of Things as other areas of interest.</p>
+                        <p id="yui_3_17_2_1_1512352115284_274" style="word-wrap: break-word; margin-bottom: 0px; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">The ColliderX name was inspired by the world's most powerful particle accelerator, a facility to allow physicists to test the predictions of different theories, by accelerating particles to a point where the kinetic energy created can impact other particles. Similarly, we are putting incredibly smart people together in a room (virtual and physical) to see how we can harness the power of experimental research and tinkering.&amp;nbsp;</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="jumbotron s_button bg-gray-lighter">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-7 col-md-offset-2">
+                        <div class="o_image_floating s_image_floating pull-left">
+                          <div class="o_container"><span class="fa fa-medium fa-5x" style="" data-original-title="" title=""/>&amp;nbsp;</div>
+                          <div class="o_footer">
+                            <small class="text-muted">&amp;nbsp;</small>
+                          </div>
+                        </div>
+                        <p class="mb0">
+                          <strong>Read our latest updates on Medium</strong>
+                        </p>
+                        <p class="mb0"> Stay up to date with our community</p>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="https://medium.com/colliderx" class="pull-right mt8 btn btn-primary btn-lg" target="_blank" data-original-title="" title="">Read it here</a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="s_three_columns">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-5 mb48 mt32">
+                        <img class="img img-responsive" src="/cx_website/static/src/img/tinkerers.png" alt="Odoo - Sample 1 for three columns"/>
+                        <h5 class="mt16" align="center">
+                          <font style="" class="text-gamma">Learn More &amp;gt;&amp;gt;</font>
+                          <br/>
+                        </h5>
+                        <p align="center">Become a part of our research network.<br/>Help us solve problems and help us catalogue new ones, and seek the truth.</p>
+                        <p align="center">
+                          <br/>
+                        </p>
+                        <p align="center">
+                          <a href="/shop" class="btn btn-danger" data-original-title="" title="">Submit a<br/>Research Topic</a>
+                          <span style="display:inline-block;width:4em;"/>
+                          <a href="/shop" class="btn btn-danger" data-original-title="" title="">Become a<br/>Researcher</a>
+                        </p>
+                      </div>
+                      <div class="col-md-2 mb92 mt48">
+                        <br/>
+                      </div>
+                      <div class="col-md-5 mt32 mb48">
+                        <img class="img img-responsive" src="/cx_website/static/src/img/backers.png" alt="Odoo - Sample 3 for three columns"/>
+                        <h5 class="mt16" align="center">
+                          <font class="text-gamma" style="">Learn More &amp;gt;&amp;gt;</font>
+                          <br/>
+                        </h5>
+                        <p align="center">Support a new model for collaborative, open research and get an extended R&amp;amp;D team at your fingertips to answer your toughest technical questions.</p>
+                        <p align="center">
+                          <br/>
+                        </p>
+                        <p align="center">
+                          <a href="/shop" class="btn btn-danger" data-original-title="" title="">Pledge Funds<br/>(No financial obligation)</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="jumbotron s_button bg-gray-lighter">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3"/>
+                      <div class="col-md-6">
+                        <p class="mb0">
+                          <strong>Sign Up for our Newsletter!<br/></strong>
+                        </p>
+                        <p class="mb0">Receive news and updates from ColliderX.</p>
+                        <p class="mb0">
+                          <br/>
+                        </p>
+                        <div class="input-group js_subscribe hidden" data-list-id="1" data-subscribe="off">
+                          <input name="email" class="js_subscribe_email form-control" placeholder="your email..." type="email"/>
+                          <span class="input-group-btn">
+                            <a href="#" class="btn btn-primary js_subscribe_btn o_default_snippet_text">Subscribe</a>
+                            <a href="#" class="btn btn-success js_subscribed_btn hidden o_default_snippet_text" disabled="disabled">Thanks</a>
+                          </span>
+                          <div class="alert alert-success hidden o_default_snippet_text">Thanks for your subscription!</div>
+                        </div>
+                      </div>
+                      <div class="col-md-3"/>
+                    </div>
+                  </div>
+                </section>
               </div>
-            </div>
-          </section>
-          <section class="s_image_text" style="">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6 mt32 mb32">
-                  <img class="img img-responsive center-block mb16" src="/cx_website/static/description/icon.png" alt="Odoo image and text block" data-original-title="" title=""/>
-                </div>
-                <div class="col-md-6 mt64 mb32">
-                  <h3>About ColliderX</h3>
-                  <p id="yui_3_17_2_1_1512352115284_270" style="word-wrap: break-word; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">ColliderX is the world’s first open-source,&amp;nbsp;crowdsourced, and crowdfunded blockchain research and development hub. This is a unique model for unbiased, ground-breaking R&amp;amp;D that bridges the gap between industry problems and pure academic or corporate research.</p>
-                  <p style="word-wrap: break-word; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">Although we are passionate about the power of blockchain technology, we don’t want to be restricted to just that; we explore blockchain at the convergence of other technologies. To us, "[Blockchain++]" means blockchain at the intersection of machine learning and A.I, with augmented reality, and Internet of Things as other areas of interest.</p>
-                  <p id="yui_3_17_2_1_1512352115284_274" style="word-wrap: break-word; margin-bottom: 0px; color: rgba(26, 26, 26, 0.7); font-family: &quot;Titillium Web&quot;; font-size: 18px;">The ColliderX name was inspired by the world's most powerful particle accelerator, a facility to allow physicists to test the predictions of different theories, by accelerating particles to a point where the kinetic energy created can impact other particles. Similarly, we are putting incredibly smart people together in a room (virtual and physical) to see how we can harness the power of experimental research and tinkering.&amp;nbsp;</p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="jumbotron s_button bg-gray-lighter">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-9">
-                  <p class="mb0">
-                    <strong>Read our latest updates on Medium</strong>
-                  </p>
-                  <p class="mb0"> Stay up to date with our community</p>
-                </div>
-                <div class="col-md-3">
-                  <a href="https://medium.com/colliderx" class="pull-right mt8 btn btn-primary btn-lg" target="_blank" data-original-title="" title="">Read it here</a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-      </t>
-		</t>
+            </t>
+          </t>
 	</template>
 </odoo>
 
