@@ -26,21 +26,34 @@
 		<function model="res.company" name="set_colliderx_company_data"/> <!-- calling set_colliderx_company_data() from models.py -->
 		<function model="website" name="set_website_settings"/> 	<!-- call set_website_settings() -->
 
-			<!-- Another way to set up the signup parameters vs. the record, then the function (in that order) below
-					 See https://www.odoo.com/forum/help-1/question/how-to-update-a-module-s-config-settings-from-another-module-28230
-					 Or use this function call to the method in class within models.py
-					 <function model="my.config.settings" name="set_signup_parameters"/> 
-			-->
-			<record model="res.config.settings" id="cx_operations.signup_settings">
-				<field name="auth_signup_uninvited">b2c</field>
-				<field name="auth_signup_reset_password" eval="1"/>	
-			</record>
-			<function model="res.config.settings" name="execute">
-				<!-- ids = -->			<value eval="[ref('cx_operations.signup_settings')]"/>
-				<!-- context = -->	<value eval="{}"/>
-			</function>
-			<!-- end -->
+		<!-- Another way to set up the signup parameters vs. the record, then the function (in that order) below
+				 See https://www.odoo.com/forum/help-1/question/how-to-update-a-module-s-config-settings-from-another-module-28230
+				 Or use this function call to the method in class within models.py
+				 <function model="my.config.settings" name="set_signup_parameters"/> 
+		-->
+		<record model="res.config.settings" id="cx_operations.signup_settings">
+			<field name="auth_signup_uninvited">b2c</field>
+			<field name="auth_signup_reset_password" eval="1"/>	
+		</record>
+		<function model="res.config.settings" name="execute">
+			<!-- ids = -->			<value eval="[ref('cx_operations.signup_settings')]"/>
+			<!-- context = -->	<value eval="{}"/>
+		</function>
+		<!-- end -->
+	</data>
 
+	<data noupdate="0"> <!-- TODO bundle with update="1" -->
+		<!-- Donation products -->
+		<record id="donation_1_USD" model="product.product">
+			<field name="name">Donation amount (unit of $USD)</field>
+			<field name="sale_ok" eval="True"/>
+			<field name="purchase_ok" eval="False"/>
+			<field name="website_published" eval="True"/>
+			<field name="list_price">1.00</field>
+			<!-- no tax for donations
+			<field name="taxes_id" ref="l10n_ca.1_hst13_purc_en"/>
+			-->
+		</record>	
 	</data>
 
 </odoo>

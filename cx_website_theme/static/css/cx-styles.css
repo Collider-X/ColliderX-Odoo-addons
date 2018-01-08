@@ -31,3 +31,9 @@ h5 {
     text-transform: uppercase;
     font-size: 12px;
 }
+
+/* Styles for the donation page */
+form.cx-centre {
+    text-align: centre;
+}
+

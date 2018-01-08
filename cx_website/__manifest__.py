@@ -40,7 +40,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base',
-				'website',
+				'website', 'website_mass_mailing',  # 2nd is for newsletter subscription
                 'cx_website_theme', # ColliderX theme in a companion module
 				'theme_default',	# we need the plain bootstrap theme
 				],
@@ -49,6 +49,7 @@
     'data': [
         'pages/homepage.xml',
         'pages/footer.xml',
+        'pages/donate.xml',
     ],
 
     "auto_install": False,
