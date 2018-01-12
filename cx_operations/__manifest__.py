@@ -45,7 +45,7 @@
     # any module necessary for this one to work correctly
     'depends': ['base', 'l10n_ca',      # base Odoo and Canadian context (incl. accounting)
 				'website', 
-				'theme_default',	    # we need the plain bootstrap theme
+				#'theme_default',	    # we need the plain bootstrap theme
                 'auth_signup',          # allows user to self-register
                 'membership',           # to manage memberships
                 'website_crm',          # adds contact form, and pulls in crm, website_form, website_partner
