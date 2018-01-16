@@ -50,10 +50,53 @@
 			<field name="purchase_ok" eval="False"/>
 			<field name="website_published" eval="True"/>
 			<field name="list_price">1.00</field>
-			<!-- no tax for donations
-			<field name="taxes_id" ref="l10n_ca.1_hst13_purc_en"/>
-			-->
-		</record>	
+			<field name="image_medium" type="base64" file="cx_operations/static/src/img/money-1673582_256_190.png"/>
+			<field name="taxes_id" eval='[(5,)]'/>  <!-- no taxes -->
+		</record>
+		<record id="donation_1_CAD" model="product.product">
+			<field name="name">Donation amount (unit of $CAD)</field>
+			<field name="sale_ok" eval="True"/>
+			<field name="purchase_ok" eval="False"/>
+			<field name="website_published" eval="True"/>
+			<field name="list_price">1.00</field>
+			<field name="image_medium" type="base64" file="cx_operations/static/src/img/money-1673582_256_190.png"/>
+			<field name="taxes_id" eval='[(5,)]'/>  <!-- no taxes -->
+		</record>
+		<record id="donation_1_BTC" model="product.product">
+			<field name="name">Donation amount (unit of BTC)</field>
+			<field name="sale_ok" eval="True"/>
+			<field name="purchase_ok" eval="False"/>
+			<field name="website_published" eval="True"/>
+			<field name="list_price">1.00</field>
+			<field name="image_medium" type="base64" file="cx_operations/static/src/img/Bitcoin.png"/>
+			<field name="taxes_id" eval='[(5,)]'/>  <!-- no taxes -->
+		</record>
+		<record id="donation_1_ETH" model="product.product">
+			<field name="name">Donation amount (unit of ETH)</field>
+			<field name="sale_ok" eval="True"/>
+			<field name="purchase_ok" eval="False"/>
+			<field name="website_published" eval="True"/>
+			<field name="list_price">1.00</field>
+			<field name="image_medium" type="base64" file="cx_operations/static/src/img/ethereum.png"/>
+			<field name="taxes_id" eval='[(5,)]'/>  <!-- no taxes -->
+		</record>
+		<record id="donation_1_LTC" model="product.product">
+			<field name="name">Donation amount (unit of LTC)</field>
+			<field name="sale_ok" eval="True"/>
+			<field name="purchase_ok" eval="False"/>
+			<field name="website_published" eval="True"/>
+			<field name="list_price">1.00</field>
+			<field name="image_medium" type="base64" file="cx_operations/static/src/img/litecoin.png"/>
+			<field name="taxes_id" eval='[(5,)]'/>  <!-- no taxes -->
+		</record>
+		<!--
+		<record id="no_sales_tax_applies" model="account.tax">
+			<field name="name">No sales tax</field>
+			<field name="amount">0</field>
+			<field name="amount_type">fixed</field>
+			<field name="type_tax_use">sale</field>
+		</record>
+		-->
 	</data>
 
 </odoo>
