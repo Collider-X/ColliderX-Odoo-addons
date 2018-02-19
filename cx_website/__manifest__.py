@@ -42,7 +42,8 @@
     'depends': ['base',
 				'website', 'website_mass_mailing',  # 2nd is for newsletter subscription
                 'cx_website_theme', # ColliderX theme in a companion module
-				'theme_default',	# we need the plain bootstrap theme
+				#'theme_default',	# we need the plain bootstrap theme (on the community edition CE)
+                'web_enterprise',   # incompatible with theme_default
 				],
 
     # always loaded

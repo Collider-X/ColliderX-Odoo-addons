@@ -42,7 +42,8 @@
     # any module necessary for this one to work correctly
     'depends': ['base',
 				'website',
-				'theme_default',	# we need the plain bootstrap theme
+				#'theme_default',	# we need the plain bootstrap theme (on the community edition CE)
+                'web_enterprise',   # incompatible with theme_default
 				],
 
     # always loaded
