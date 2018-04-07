@@ -50,6 +50,7 @@
                 'membership',           # to manage memberships
                 'website_crm',          # adds contact form, and pulls in crm, website_form, website_partner
                 'website_sale',         # pulls in 'sale', 'website', 'payment', etc
+                'sale_management',      # get Sales functionality to track sales orders, etc
                 'payment_stripe',       # pulls in 'payment'
                 'account_invoicing',    # 
 				],

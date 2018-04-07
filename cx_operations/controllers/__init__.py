@@ -20,3 +20,4 @@
 
 from . import controllers
 from . import donate
+from . import mandatory_fields
