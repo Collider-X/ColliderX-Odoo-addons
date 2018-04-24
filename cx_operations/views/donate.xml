@@ -1,0 +1,193 @@
+<!-- 
+	The ColliderX main module (cx_operations) contains the ColliderX configuration data and apps for Odoo 11 (community).
+	Copyright (C) 2017 Marc Lijour
+	https://www.linkedin.com/in/marclijour	
+	https://github.com/Collider-X/ColliderX-Odoo-addons/tree/11.0
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Affero General Public License as
+	published by the Free Software Foundation, either version 3 of the
+	License, or (at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Affero General Public License for more details.
+
+	You should have received a copy of the GNU Affero General Public License
+	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<odoo>
+    <template id="cx_website.donate" name="Donation Page">
+<t name="Donation Page" t-name="cx_website.donate">
+			<t name="Donation Page" priority="69" t-name="cx_website.donate">
+				<t t-set="head">
+		<script>
+  	    function update_product_id() {
+            console.log("here getting product id with currency=" +  $("#currency").find(":selected").text());
+            $.post("/cx/product_id", {
+                currency: $("#currency").find(":selected").text(),
+                category: $("#category").find(":selected").text()
+                },
+                function(data, status) {
+                console.log("Data: " + data + "\nStatus: " + status);
+                $("#product_id").val(data);
+            });
+        }
+						$(document).ready(function() {
+				        console.log("document.ready");
+						    $("#set_qty").on("input", function() {
+								        // allow numbers, a comma or a dot
+												        $(this).val($(this).val().replace(/[^0-9,\.]+/, ''));
+						    });
+			            /* This part is for multiple categories
+			            -- in this version product_id is hardcoded
+		        		$("#currency").on("click", function() {
+		        		        // update the hidden input field keeping track of the product
+		        		        console.log("change in select, currency value=" + this.value);
+		        		        update_product_id();
+		        		});
+		        		$("#category").on("click", function() {
+		        		        // update the hidden input field keeping track of the product
+		        		        console.log("change in select, category value=" + this.value);
+		        		        update_product_id();
+		        		});
+		        		*/
+                $("#frm").submit(function(e) {
+                        if($("#chk_terms").is(":checked")) {
+                            $("#lbl_terms h6").css({color: "rgb(102, 102, 102)"});
+                            if($.isNumeric($("#set_qty").val()) == false) {
+                                $("#set_qty").css({"background-color": "pink"});
+                                e.preventDefault(); // do nothing (not submit)
+                            }
+                        }else{
+                            $("#lbl_terms h6").css({color: "red"});
+                            e.preventDefault(); // do nothing (not submit)
+                        }
+                });
+						});
+	      		var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            var today  = new Date();
+        
+
+					</script>
+				</t>
+          <t t-call="website.layout">
+            <div id="wrap" class="oe_structure oe_empty">
+              <section class="s_title bg-black mb0">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 mb16">
+                      <h1 class="text-center">
+                        <font style="font-size: 62px;">$ 2,000,100</font>
+                        <br/>
+                      </h1>
+                      <h3 class="text-center text-muted">Pledged so far</h3>
+                      <h3 class="text-center text-muted">
+                          <script>
+                                document.write(today.toLocaleDateString("en-US",options).toString());
+                          </script><br/>
+                        </h3>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="jumbotron s_big_message bg-white" style="">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-offset-1 mb0 col-md-10">
+                      <h1>Make a Pledge to ColliderX<br/></h1>
+                      <p>
+                        <br/>
+                      </p>
+                      <div class="o_container">
+                          <!--
+                        <div class="media_iframe_video" data-oe-expression="//www.youtube.com/embed/naeuTrslXhE?autoplay=0">
+                          <div class="css_editable_mode_display" data-original-title="" title="">&amp;nbsp;</div>
+                          <div class="media_iframe_video_size">&amp;nbsp;</div>
+                          <iframe src="//www.youtube.com/embed/naeuTrslXhE?autoplay=0" frameborder="0"/>
+                        </div>
+                            -->
+                            <div style="border:1px red solid;">Youtube here</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="s_text_block mt32 mb32 oe_website_sale">
+                <div class="container">
+                  <h2 class="text-center">How Much Would you like to contribute?</h2>
+                  <!--
+									<form role="form" class="cx-centre" action="/cx/donate" method="POST">
+		        			-->				
+		  					<form id="frm" role="form" class="cx-centre" action="/shop/cart/update" method="POST">
+		  		    			<input type="hidden" id="product_id" name="product_id" value="2"/>
+                    <div class="col-md-4 col-md-offset-4">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input id="set_qty" name="set_qty" class="form-control" type="text"/>
+                          <span class="input-group-btn">
+                            <select id="currency" name="currency" class="btn">
+                              <option>$CAD</option>
+                              <!-- that's it for now; crypto soon
+                              <option>$USD</option>
+                              -->
+                                  <!--
+                              <option>BTC</option>
+                              <option>LTC</option>
+                              <option>ETH</option>
+                                  -->
+                            </select>
+                          </span>
+                        </div>
+                      </div>
+                      <!-- no categories at this point
+                      <div class="form-group" style="padding-bottom:1em;">
+                            <select id="category" name="category" style="width:100%;">
+                              <option>All categories</option>
+                              <option>Security</option>
+                              <option>Scalability</option>
+                              <option>Interoperability</option>
+                              <option>Blockchain x Machine Learning / A.I / H.I </option>
+                              <option>Blockchain x IoT</option>
+                              <option>Hardware</option>
+                            </select>
+                      </div>
+                      -->
+                      <div class="checkbox">
+                        <label id="lbl_terms">
+                          <input id="chk_terms" value="agree_to_terms" type="checkbox"/>
+                          <h6>You must agree with the <a href="/terms">terms and conditions</a></h6>
+                        </label>
+                      </div>
+                      <div align="center">
+												<input id="btn_donate" type="submit" class="btn btn-danger" value="Donate"/> <!--data-original-title="" title="">Donate</a>-->
+                      </div>
+                      <hr/>
+                      <div style="color: green">Let's have these two checkboxes later for better UX</div>
+                      <div class="checkbox">
+                        <label>
+                          <input id="chk_list" value="permission_to_list_as_donor" type="checkbox"/>
+                          <h6>OK to have your name on the donor's list?</h6>
+                        </label>
+                        <label>
+                          <input id="chk_contact" value="permission_to_contact" type="checkbox"/>
+                          <h6>OK to be contacted later for updates about ColliderX?</h6>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </section>
+            </div>
+          </t>
+        </t>
+        
+					<script>
+	      		console.log($("input[name='product_id']").attr('value'));
+	      	</script>	
+					
+				</t>
+			</template>
+		</odoo>

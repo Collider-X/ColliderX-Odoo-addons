@@ -58,10 +58,12 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv', TODO later
+        #'views/web_assets.xml',             # Javascript (donation page) 
         'views/set_config_parameters.xml',  # programmatically set config parameters (company, data, favicon, config, etc)
         'views/signup_member.xml',          # tailors the auth_signup form HTML for ColliderX needs
         'views/extended-res_partner_form.xml',    # to display the information from the members panel in Odoo
         'views/extended-res_users_form.xml',    # to display the first name and last name separately under the full name on the users panel
+        'views/donate.xml',                 # page /donate
     ],
 
     "auto_install": False,
